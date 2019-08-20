@@ -1,0 +1,96 @@
+body{
+    background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+}
+.card{
+    width: 200px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card1{
+    width: 25%;
+    display: inline-block;
+}
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253);
+}
+.add{
+    margin: 96px 71px;
+}
+.card-body {
+    padding: 1px 0;
+}
+
+.card-text{
+    font-size: 16px;
+    
+}
+
+.container-fluid .row{
+    padding-top: 100px;    
+}
+
+.btn-remove{
+    transform: scale(0.8)
+}
+
+.btn-remove:hover{
+    transform: scale(0.9)
+}
+
+@media screen and (max-width: 600px) {
+    .col-md-3 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+    
+.modal{
+    width: 350px;
+    height: 410px;
+    padding: 10px;
+}
+.modal-footer{
+    content: 10px
+}
+.checkbox-right{
+    float: right;
+}
+
+.checkbox-brown[type="checkbox"].filled-in:checked + span:not(.lever):after{
+    border: 2px solid #a1887f;
+    background-color: #a1887f;
+}
+
+.input-field label {
+    color: #4e342e;
+  }
+  .input-field input[type=text]:focus + label {
+    color: #a1887f;
+  }
+  .input-field input[type=tel]:focus + label {
+    color: #a1887f;
+  }
+
+  .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: #a1887f !important;
+   }
+   .input-field input[type=tel]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: #a1887f !important;
+   }
+
+   .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #a1887f !important;
+    box-shadow: 0 1px 0 0 #a1887f !important;
+   }
+   .input-field input[type=tel]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #a1887f !important;
+    box-shadow: 0 1px 0 0 #a1887f !important;
+   }
+   .btn-f {
+    line-height: 2rem !important
+    }
+.modal-close{
+    margin: 0 2px 2px 2px !important
+}
