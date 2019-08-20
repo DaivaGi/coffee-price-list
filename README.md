@@ -1,7 +1,6 @@
-# coffee-price-list
-Coffee price list billboard
+#Coffee price list billboard
 
-<a href="https://coffee-1cc19.firebaseapp.com">Live Demo</a>
+<h1><a href="https://coffee-1cc19.firebaseapp.com">Live Demo</a><h1>
 
 <h3>Build/Run</h3>
 <h4>Requirements<h4>
@@ -15,4 +14,4 @@ Coffee price list billboard
 <p>/* Then start both Node and React */</p>
 <code>npm start</code>
 <br>
-Open http://localhost:3000 to view it in the browser.
+Open <a href="http://localhost:3000">http://localhost:3000</a> to view it in the browser.
