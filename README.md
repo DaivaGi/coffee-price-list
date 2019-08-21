@@ -14,4 +14,4 @@
 <p>/* Then start both Node and React */</p>
 <code>npm start</code>
 <br>
-Open <a href="http://localhost:3000">http://localhost:3000</a> to view it in the browser.
+Open <a href="http://localhost:3001">http://localhost:3001</a> to view it in the browser.
