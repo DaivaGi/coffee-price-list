@@ -5,6 +5,7 @@ import M from "materialize-css";
 import ls from 'local-storage'
 import App from "./Cards"
 import img6 from "../components/img/no image1.jpg"
+import { isNumber } from "util";
 
 
   var elems = document.querySelectorAll('.has-character-counter');
@@ -15,28 +16,16 @@ class AddModal extends Component {
         title: null,
         imgsrc: null,
         price: null,
-        unchecked: true        
-    }     
+        unchecked: true,         
+    }
+
 handleOnCheck = () => {
   this.setState({ unchecked: !this.state.unchecked })
 }
 
-render () {
-  return (
-    <div>
-      <form onSubmit={ this.handleSubmit }>
-        <input type="text" />
-        <button type="submit" />
-      </form>
-      {this.state.showButton ? <button>See as abcd</button> : null}
-    </div>
-  )
-}
-
 handleChange = (e) => {
     this.setState({
-        [e.target.id]: e.target.value 
-              
+        [e.target.id]: e.target.value               
     })
 }
 
@@ -56,7 +45,6 @@ handleSubmit = (e) => {
             imgsrc: "",
             
         });
-
     }
     
 gotPhoto = (event) => {
@@ -78,11 +66,11 @@ render(){
                     <div><h5>Add New Item</h5></div>
                     <div class="input-field ">
                         <input id="title" type="text" maxlength="15" onChange={this.handleChange} value={this.state.title}/>
-                        <label htmlFor="title">Coffee tittle</label>
+                        <label htmlFor="title">Coffee tittle</label>                        
                     </div>
                     <div class="input-field">
                         <input id="price" type="tel" onChange={this.handleChange} value={this.state.price}/>
-                        <label htmlFor="title">Price</label>
+                        <label htmlFor="title">Price</label>                        
                     </div>                                
                     <form action="#">
                     { this.state.unchecked ?
